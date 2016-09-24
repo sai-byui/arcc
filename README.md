@@ -1,5 +1,4 @@
-# arcc
-###Autonomous Remote Control Car
+# arcc - Autonomous Remote Control Car
 
 ##Introduction
 
