@@ -1,5 +1,7 @@
 # ARCC - Autonomous Remote Control Car
 
+##WARNING: This project is under heavy development.
+
 ##Introduction
 
 This project is meant to be a comprehensive but simple autonomous RC car program running on a Raspberry Pi 3. It is written in C++ using modular implementation of the various steps involved in the working of an autonomous vehicle.
