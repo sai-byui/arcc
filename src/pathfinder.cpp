@@ -7,8 +7,26 @@
  */
 
 #include <iostream>
+#include <vector>
+#include <string>
+#include <list>
 
-int pathFinder() {
-    //Pathfinder code goes here
-    return 0;
+using namespace std;
+
+int pathfinding() 
+{
+	//for pathfinding code
+	return 0;
+}
+void test() 
+{
+	//for testing pathfinding algorithm
+
+}
+
+int main() {
+	
+	
+
+	return 0;
 }
