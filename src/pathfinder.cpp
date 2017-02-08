@@ -10,19 +10,31 @@
 #include <vector>
 #include <string>
 #include <list>
+#include "node.h"
 
 using namespace std;
 
-int pathfinding() 
+/*
+pathfinding(Node map)
+* This function takes a Node collection and performs the A* algorthim
+* to return the path
+*
+*/
+Node pathfinding(Node map) 
 {
-	//for pathfinding code
-	return 0;
+	//pathfinding code here
+	
+	return map;
 }
+
+
 void test() 
 {
 	//for testing pathfinding algorithm
 
 }
+
+
 
 int main() {
 	
