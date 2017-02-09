@@ -9,15 +9,15 @@ public:
 	Node();
 	~Node();
 
-	bool operator<(const node& rhs) { return name < rhs.name; }
-	bool operator>(const node& rhs) { return name > rhs.name; }
+	bool operator<(const Node& rhs) { return name < rhs.name; }
+	bool operator>(const Node& rhs) { return name > rhs.name; }
 
-	void addConnection(Node n);
-	bool isConnected(Node n);
+	void addConnection(Node *n, int w);
+	bool isConnected(Node *n);
 
-	String name;
-	Vector<int> weights;
-	Vector<node*> connects;
+	string name;
+	vector<int> weights;
+	vector<Node*> connects;
 private:
 	bool isVisited; // maybe unnecessary, but toggled true if already visited.
 };
@@ -26,23 +26,23 @@ private:
 // n is the node to add, w is the weight between the two nodes
 void Node::addConnection(Node *n, int w) {
 	// First, connect this node to n.
-	connects.pushBack(n);
-	weights.pushBack(w);
+	connects.push_back(n);
+	weights.push_back(w);
 	// Then, connect the n node to this node.
-	n->connects.pushBack(this);
-	n->weights.pushBack(w);
+	n->connects.push_back(this);
+	n->weights.push_back(w);
 }
 
 bool Node::isConnected(Node *n) {
-	for (int i = 0; i < connects.length(); i++) {
+	for (int i = 0; i < connects.size(); i++) {
 		if (n == connects[i])
 			return true;
 	}
 	return false;
 }
 
-bool Node::Node() {
-	connects.pushBack(n);
+Node::Node() {
+	connects.push_back(n);
 }
 
 Node::Node()

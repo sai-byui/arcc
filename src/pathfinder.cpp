@@ -7,8 +7,38 @@
  */
 
 #include <iostream>
+#include <vector>
+#include <string>
+#include <list>
+#include "node.h"
 
-int pathFinder() {
-    //Pathfinder code goes here
-    return 0;
+using namespace std;
+
+/*
+pathfinding(Node map)
+* This function takes a Node collection and performs the A* algorthim
+* to return the path
+*
+*/
+Node pathfinding(Node map) 
+{
+	//pathfinding code here
+	
+	return map;
+}
+
+
+void test() 
+{
+	//for testing pathfinding algorithm
+
+}
+
+
+
+int main() {
+	
+	
+
+	return 0;
 }
