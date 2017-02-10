@@ -15,7 +15,12 @@ public:
 	void addConnection(Node *n, int w);
 	bool isConnected(Node *n);
 
+	//node identifier
 	string name;
+	//for calculating path
+	int fCost;
+	int gCost;
+
 	vector<int> weights;
 	vector<Node*> connects;
 private:
